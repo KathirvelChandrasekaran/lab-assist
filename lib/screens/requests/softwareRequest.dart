@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:lab_assist/services/userRequests.dart';
 
+// ignore: must_be_immutable
 class SoftwareRequest extends StatefulWidget {
   String userName;
   SoftwareRequest({this.userName});

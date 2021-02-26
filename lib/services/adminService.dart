@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:crypt/crypt.dart';
 import 'package:flutter/material.dart';
 import 'package:lab_assist/screens/adminPanel.dart';
-import 'package:lab_assist/services/roleAuth.dart';
 
 Future<String> addStudent(
     String userName, String password, BuildContext context) async {
@@ -57,5 +56,4 @@ resetPassword(String userName, DocumentSnapshot snapshot) {
           .delete()
           .then((value) => print('Success'))
           .catchError((error) => print("Failed to delete user: $error")));
-  ;
 }

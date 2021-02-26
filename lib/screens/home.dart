@@ -4,6 +4,7 @@ import 'package:lab_assist/screens/createRequest.dart';
 import 'package:lab_assist/screens/profile.dart';
 import 'package:lab_assist/screens/requestHistory.dart';
 
+// ignore: must_be_immutable
 class Home extends StatefulWidget {
   String userName;
   Home({this.userName});

@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:lab_assist/screens/approvehardwareResponse.dart';
+import 'package:lab_assist/screens/viewHardware.dart';
 
 Widget hardwareDetails(String userName, BuildContext context, bool role) {
   return Container(
@@ -168,7 +168,7 @@ Widget hardwareDetails(String userName, BuildContext context, bool role) {
                                                     context,
                                                     MaterialPageRoute(
                                                       builder: (context) =>
-                                                          HardwareResponse(
+                                                          ViewHardware(
                                                         pcID: requests['PCID'],
                                                         item1: requests['items']
                                                             ['item1'],

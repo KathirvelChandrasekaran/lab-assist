@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab_assist/services/userRequests.dart';
 
+// ignore: must_be_immutable
 class RemoteAccessRequest extends StatefulWidget {
   String userName;
   RemoteAccessRequest({this.userName});

@@ -152,9 +152,6 @@ Widget remoteAccessDetails(String userName, BuildContext context, bool role) {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: 10,
-                      ),
                     ],
                   ),
                 );

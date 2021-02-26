@@ -4,6 +4,7 @@ import 'package:lab_assist/screens/login.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lab_assist/services/roleAuth.dart';
 
+// ignore: must_be_immutable
 class Profile extends StatefulWidget {
   String userName;
   Profile({this.userName});
@@ -126,7 +127,7 @@ class _ProfileState extends State<Profile> {
                         ),
                       ),
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.01,
+                        height: MediaQuery.of(context).size.height * 0.02,
                       ),
                       ButtonTheme(
                         minWidth: MediaQuery.of(context).size.width * 0.80,

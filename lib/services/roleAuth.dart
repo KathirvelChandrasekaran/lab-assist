@@ -45,6 +45,7 @@ Future<String> authentication(
     return returnVal;
   } catch (e) {
     print(e);
+    return e;
   }
 }
 
@@ -131,7 +132,12 @@ completedHardware(
           .delete()
           .then((value) => print('Success'))
           .catchError((error) => print("Failed to delete user: $error")));
-  Navigator.pop(context);
+  Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(
+        builder: (context) => AdminPanel(),
+      ),
+      (route) => false);
 }
 
 completedSoftware(
@@ -174,10 +180,10 @@ completedSoftware(
           .delete()
           .then((value) => print('Success'))
           .catchError((error) => print("Failed to delete user: $error")));
-  Navigator.pushReplacement(
-    context,
-    MaterialPageRoute(
-      builder: (context) => AdminPanel(),
-    ),
-  );
+  Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(
+        builder: (context) => AdminPanel(),
+      ),
+      (route) => false);
 }
